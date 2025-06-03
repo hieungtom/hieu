@@ -1,156 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hieu Nguyen</title>
     <link rel="stylesheet" href="css/styles.css" />
-    <script src="https://kit.fontawesome.com/6808d428b0.js" crossorigin="anonymous"></script>
-</head>
-<body>
+    <script
+      src="https://kit.fontawesome.com/6808d428b0.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <header id="header">
-        <nav id="navbar" class="navbar">
-            <a href="#" class="logo">Hieu</a>
-            <a href="javascript:void(0);" class="toggle" onclick="navMenu();"><i class="fa-solid fa-bars"></i></a>
-            <ul class="menu" id="navbar-menu">
-                <li class="item"><a href="#welcome-section" class="active">Home</a></li>
-                <li class="item"><a href="#projects">Projects</a></li>
-                <li class="item"><a href="#contact-section">Contact me</a></li>
-            </ul>
-        </nav>
+      <nav id="navbar" class="navbar">
+        <a href="#" class="logo">Hieu</a>
+        <a href="javascript:void(0);" class="toggle-menu"
+          ><i class="fa-solid fa-bars"></i
+        ></a>
+        <div class="responsive-dropdown-menu">
+          <ul>
+            <li class="item">
+              <a href="#welcome-section" class="active">Home</a>
+            </li>
+            <li class="item"><a href="#projects">Projects</a></li>
+            <li class="item"><a href="#contact-section">Contact me</a></li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
     <main>
-        <section id="welcome-section" class="section">
-            <div class="welcome-section-content">
-                <div class="contacts-flexbox">
-                    <a href="https://www.linkedin.com/in/hieu-nguyen-tom/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://github.com/hieungtom" target="_blank"><i class="fa-brands fa-github"></i></a>
-                </div>
-                <div class="title-flexbox">
-                    <h1 class="intro">Hi, I'm Hieu</h1>
-                    <p class="intro-text">I'm a 2nd year student in information technology who's very excited about web development and information technology in general.</p>
-                    <p class="intro-text"> I've been learning some basic skills in C, HTML, CSS and SQL. Eager to learn more and take on new challenges.</p>
-                    <button class="cv-button"><a href="#" download>Download CV <i class="fa-solid fa-download"></i></a></button>
-                </div>
-                <div class="img-flexbox">
-                    <img src="img/mediff.jpg" class="me-img" alt="picture of me"/>
-                </div>
+      <section id="welcome-section" class="section">
+        <div class="welcome-section-content">
+          <div class="contacts-flexbox">
+            <a
+              href="https://www.linkedin.com/in/hieu-nguyen-tom/"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a href="https://github.com/hieungtom" target="_blank"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </div>
+          <div class="title-flexbox">
+            <h1 class="intro">Hi, I'm Hieu</h1>
+            <p class="intro-text">
+              I'm a 2nd year student in information technology who's very
+              excited about web development and information technology in
+              general.
+            </p>
+            <p class="intro-text">
+              I've learnt and still learning some basic skills in C, C#, HTML,
+              CSS, SQL, JS. Eager to learn more and take on new challenges.
+            </p>
+            <button class="cv-button">
+              <a href="#" download
+                >Download CV <i class="fa-solid fa-download"></i
+              ></a>
+            </button>
+          </div>
+          <div class="img-flexbox">
+            <img src="img/mediff.jpg" class="me-img" alt="picture of me" />
+          </div>
+        </div>
+        <a href="#projects" class="scroll-button"
+          ><i class="fa fa-arrow-down"></i
+        ></a>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="section-title">
+          <h1>Portfolio</h1>
+          <p>My recent projects</p>
+        </div>
+        <div class="grid-container">
+          <div class="grid-item">
+            <a
+              href="https://github.com/hieungtom/football_bet_console_app"
+              target="_blank"
+            >
+              <img
+                src="https://owngoalnigeria.com/wp-content/uploads/2023/08/D862A8DE-B60D-4CE3-99BE-678A09C55070.jpeg"
+                alt="football bettting picture"
+              />
+              <div class="project-title">
+                <h2>Football betting</h2>
+              </div>
+            </a>
+            <p>
+              Simple C# console application that reads data from a text file.
+            </p>
+          </div>
+          <div class="grid-item">
+            <a href="https://github.com/hieungtom/ft_printf" target="_blank">
+              <img
+                src="https://betanews.com/wp-content/uploads/2016/11/C-language.jpg"
+                alt="C language"
+              />
+              <div class="project-title">
+                <h2>Replication of printf</h2>
+              </div>
+            </a>
+            <p>
+              Printf function recreated in C using only standard function
+              "write".
+            </p>
+          </div>
+          <div class="grid-item middle">
+            <a href="#" target="_blank">
+              <img
+                src="https://bairesdev.mo.cloudinary.net/blog/2022/01/programming-languages-1.jpg?tx=w_1920,q_auto"
+                alt="Coding picture"
+              />
+              <div class="project-title">
+                <h2>My personal web</h2>
+              </div>
+            </a>
+            <p>
+              And that would be this webpage, where I used skills I've learnt
+              from FreeCodeCamp.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact-section" class="section">
+        <div class="section-title">
+          <h1>Contact Me</h1>
+          <p>Get in touch</p>
+        </div>
+        <div class="form-container">
+          <div class="contacts">
+            <div>
+              <i class="fa-solid fa-phone"></i>
+              <h3>Call Me</h3>
+              <p>+420 776 822 116</p>
             </div>
-            <a href="#projects" class="scroll-button"><i class="fa fa-arrow-down"></i></a>
-        </section>
-
-
-
-        <section id="projects" class="section">
-            <div class="section-title">
-                <h1>Portfolio</h1>
-                <p>My recent projects</p>
+            <div>
+              <i class="fa-regular fa-envelope"></i>
+              <h3>Email</h3>
+              <p>hieung.tom@gmail.com</p>
             </div>
-            <div class="grid-container">
-                <div class="grid-item">
-                    <a href="https://github.com/hieungtom/football_bet_console_app" target="_blank">
-                        <img src="https://owngoalnigeria.com/wp-content/uploads/2023/08/D862A8DE-B60D-4CE3-99BE-678A09C55070.jpeg" alt="football bettting picture">
-                        <div class="project-title">
-                            <h2>Football betting</h2>
-                        </div>
-                    </a>
-                    <p>Simple C# console application that reads data from a text file.</p>
-                </div>
-                <div class="grid-item">
-                    <a href="https://github.com/hieungtom/ft_printf" target="_blank">
-                        <img src="https://betanews.com/wp-content/uploads/2016/11/C-language.jpg" alt="C language">
-                        <div class="project-title">
-                            <h2>Replication of printf</h2>
-                        </div>
-                    </a>
-                    <p>Printf function recreated in C using only standard function "write".</p>
-                </div>
-                <div class="grid-item middle">
-                    <a href="#" target="_blank">
-                        <img src="https://bairesdev.mo.cloudinary.net/blog/2022/01/programming-languages-1.jpg?tx=w_1920,q_auto" alt="Coding picture">
-                        <div class="project-title">
-                            <h2>My personal web</h2>
-                        </div>
-                    </a>
-                    <p>And that would be this webpage, where I used skills I've learnt from FreeCodeCamp.</p>
-                </div>
+            <div>
+              <i class="fa-solid fa-location-dot"></i>
+              <h3>Location</h3>
+              <p>Prague</p>
             </div>
-        </section>
-
-
-
-        <section id="contact-section" class="section">
-            <div class="section-title">
-                <h1>Contact Me</h1>
-                <p>Get in touch</p>
-            </div>
-            <div class="form-container">
-                <div class="contacts">
-                    <div>
-                        <i class="fa-solid fa-phone"></i>
-                        <h3>Call Me</h3>
-                        <p>+420 776 822 116</p>
-                    </div>
-                    <div>
-                        <i class="fa-regular fa-envelope"></i>
-                        <h3>Email</h3>
-                        <p>hieung.tom@gmail.com</p>
-                    </div>
-                    <div>
-                        <i class="fa-solid fa-location-dot"></i>
-                        <h3>Location</h3>
-                        <p>Prague</p>
-                    </div>
-                </div>
-                <div class="form">
-                    <form action="https://formspree.io/f/xpwawaed" method="POST">
-                        <div class="email-name">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" autocomplete="name" required>
-                            <label class="email-label" for="email">Email</label>
-                            <input type="email" id="email" name="email" autocomplete="email" required>
-                        </div>
-                        <div>
-                        <label for="message">Message</label>
-                        <textarea name="message" id="message" required></textarea>
-                        </div>
-                        <button class="" type="submit">Send Message</button>
-                    </form>
-                </div>
-            </div>
-        </section>
+          </div>
+          <div class="form">
+            <form action="https://formspree.io/f/xpwawaed" method="POST">
+              <div class="email-name">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  autocomplete="name"
+                  required
+                />
+                <label class="email-label" for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  autocomplete="email"
+                  required
+                />
+              </div>
+              <div>
+                <label for="message">Message</label>
+                <textarea name="message" id="message" required></textarea>
+              </div>
+              <button class="" type="submit">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
 
-
-
     <footer>
-        <div class="footer-container">
-            <div class="footer-nav">
-                <h1>Hieu</h1>
-                <ul>
-                    <li>
-                        <a href="#welcome-section">Home</a>
-                    </li>
-                    <li>
-                        <a href="#projects">Projects</a>
-                    </li>
-                    <li>
-                        <a href="#contact-section">Contact me</a>
-                    </li>
-                    <li>
-                    <a href="https://www.linkedin.com/in/hieu-nguyen-tom/" id="profile-link" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                    </li>
-                    <li>
-                    <a href="https://github.com/hieungtom" target="_blank"><i class="fa-brands fa-github"></i></a>
-                    </li>
-                </ul>
-            </div>
+      <div class="footer-container">
+        <div class="footer-nav">
+          <h1>Hieu</h1>
+          <ul>
+            <li>
+              <a href="#welcome-section">Home</a>
+            </li>
+            <li>
+              <a href="#projects">Projects</a>
+            </li>
+            <li>
+              <a href="#contact-section">Contact me</a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/hieu-nguyen-tom/"
+                id="profile-link"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://github.com/hieungtom" target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </li>
+          </ul>
         </div>
-        <div class="copyright">
-            <p>&#169; Hieu Nguyen</p>
-        </div>
+      </div>
+      <div class="copyright">
+        <p>&#169; Hieu Nguyen</p>
+      </div>
     </footer>
     <script src="js/script.js"></script>
-</body>
+  </body>
 </html>
